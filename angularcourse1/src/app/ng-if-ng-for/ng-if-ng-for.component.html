@@ -1,0 +1,17 @@
+<!-- "ng-if" structure -->
+<h2 *ngIf="value <= 1">Number input is greater than or equal "2".</h2>
+<h2 *ngIf="false">Hidden item</h2>
+<input type="text" (input)="value = $event.target.value" />
+
+<!-- "ng-for" structure - Sample 01 -->
+<h2 *ngFor="let item of valuesArray">{{ item }}</h2>
+
+<!-- "ng-for" structure - Sample 02 -
+  Type A -->
+<h2 *ngFor="let name of namesVector">{{ name }}</h2>
+
+<!-- "ng-for" structure - Sample 02 -
+  Type B -->
+<div *ngFor="let name of namesVector">
+  <h2 *ngIf="name !== 'Albert'">{{ name }}</h2>
+</div>

@@ -1,0 +1,9 @@
+<!-- <pre
+  >{{ imageData | json }}
+</pre> -->
+
+<!-- OR -->
+<div *ngFor="let image of imageData">
+  <h>{{ image.title }}</h>
+  <img [attr.src]="image.url" />
+</div>
