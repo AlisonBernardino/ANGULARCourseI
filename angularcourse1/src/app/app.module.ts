@@ -16,6 +16,7 @@ import { DerivativeElementComponent } from './components/integral-element/deriva
 import { RouteAComponent } from './components/integral-element/route-a/route-a.component';
 import { RouteBComponent } from './components/integral-element/route-b/route-b.component';
 import { FormComponent } from './components/form/form.component';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -37,6 +38,8 @@ import { FormComponent } from './components/form/form.component';
     AppRoutingModule,
     HttpClientModule,
     LazyLoadingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent],

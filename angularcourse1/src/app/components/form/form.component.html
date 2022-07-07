@@ -1,1 +1,19 @@
-<p>form works!</p>
+<form [formGroup]="vehicleData">
+  <label>Mark:</label>
+  <br />
+  <input formControlName="mark" type="text" />
+  <br />
+  <label>Model:</label>
+  <br />
+  <input formControlName="model" type="text" />
+  <br />
+  <label>Coinage year:</label>
+  <br />
+  <input formControlName="coinageYear" type="text" />
+  <br />
+  <label>Description:</label>
+  <br />
+  <input formControlName="description" type="text" />
+</form>
+<button (click)="getFormData()">Send</button>
+<pre>{{ formData | json }}</pre>
